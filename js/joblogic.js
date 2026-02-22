@@ -70,7 +70,7 @@ updateCounts();
 
 
 
-
+// all status bar functional logic 
 document.querySelectorAll('.job-card').forEach(card => {
   const btnInterview = card.querySelector('.btn-interview');
   const btnRejected = card.querySelector('.btn-rejected');
