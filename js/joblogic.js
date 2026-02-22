@@ -67,3 +67,24 @@ tabRejected.addEventListener('click', () => showTab('rejected'));
 
 // Initial count
 updateCounts();
+
+
+
+
+document.querySelectorAll('.job-card').forEach(card => {
+  const btnInterview = card.querySelector('.btn-interview');
+  const btnRejected = card.querySelector('.btn-rejected');
+  const statusText = card.querySelector('.status-text');
+
+  btnInterview.addEventListener('click', () => {
+    statusText.textContent = 'INTERVIEW';
+    statusText.classList.remove('text-red-500');
+    statusText.classList.add('text-green-500');
+  });
+
+  btnRejected.addEventListener('click', () => {
+    statusText.textContent = 'REJECTED';
+    statusText.classList.remove('text-green-500');
+    statusText.classList.add('text-red-500');
+  });
+});
