@@ -29,4 +29,3 @@ Ans: Event delegation means adding a event listener to a parent elemnr handle ae
 
 Ans:"preventDefault" to stops browser behavoiur.
 "stopPropagation" stop parent bubbleing.
-<!-- the end -->
